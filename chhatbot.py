@@ -98,7 +98,9 @@
     "\n",
     "client = OpenAI(\n",
     "    base_url=\"https://openrouter.ai/api/v1\",\n",
-    "    api_key=\"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\"\n",
+    "    api_key=\"import os
+
+api_key = os.getenv("OPENROUTER_API_KEY")"\n",
     ")\n",
     "\n",
     "response = client.chat.completions.create(\n",
